@@ -1,0 +1,18 @@
+//-- Uncaught SyntaxError: Unexpected token '<''
+
+getBassInfoSearch?callback=jQuery33100542028465171831_1522404287063
+&{"ldong_addr_mgpl_dg_cd":"43","ldong_addr_mgpl_sggu_cd":"130","ldong_addr_mgpl_sggu_emd_cd":"112"
+,"wkpl_nm":"aaaaaaaaaaaaaaa","bzowr_rgst_no":""
+,"pageNo":10,"numOfRows":1
+,"serviceKey":"bRoF%2F2z3SYjfACQIccyBBQSGBKoE39%2FoXFZ3fQVYyn8Tc5nC0O9COTbwHWXPy7%2FogNbwHzIIO8RVhZ1d9u7GgQ%3D%3D"}
+&_=1522404287064:1 Uncaught SyntaxError: Unexpected token <
+
+<OpenAPI_ServiceResponse>
+	<cmmMsgHeader>
+		<errMsg>SERVICE ERROR</errMsg>
+		<returnAuthMsg>SERVICE_KEY_IS_NOT_REGISTERED_ERROR</returnAuthMsg>
+		<returnReasonCode>30</returnReasonCode>
+	</cmmMsgHeader>
+</OpenAPI_ServiceResponse>
+
+
