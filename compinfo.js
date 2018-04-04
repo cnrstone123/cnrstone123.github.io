@@ -95,8 +95,8 @@ app00.controller("SelectCtrler", function ($scope, $http) {
 		opers  = ['/getBassInfoSearch?','/getDetailInfoSearch?','/getPdAccToSttuInfoSearch?'],
 		keyStr = "&serviceKey=bRoF%2F2z3SYjfACQIccyBBQSGBKoE39%2FoXFZ3fQVYyn8Tc5nC0O9COTbwHWXPy7%2FogNbwHzIIO8RVhZ1d9u7GgQ%3D%3D";
 	$scope.oper1 = function(){
-		var compName  = ($scope.compName.value||''),
-			compRegNo = ($scope.compRegNo.value||''),
+		var compName  = (document.getElementById('compName').value||''),
+			compRegNo = (document.getElementById('compRegNo').value||''),
 			paramStr  = "ldong_addr_mgpl_dg_cd=" + ($scope.cdSIDO.value||'')
 				+"&ldong_addr_mgpl_sggu_cd=" + ($scope.cdSGG.value||'')
 				+"&ldong_addr_mgpl_sggu_emd_cd=" + ($scope.cdLawUMD.value||'')
@@ -116,7 +116,7 @@ app00.controller("SelectCtrler", function ($scope, $http) {
 		outputElm.innerHTML = '<a href="'+url+opers[0]+paramStr+'"' + ' target="_new1">op1=' + (compName||compRegNo||'') + '</a>';
 	};
 	$scope.oper2 = function(){
-		var compSeq = ($scope.compSeq.value||'');
+		var compSeq = (document.getElementById('compSeq').value||'');
 		if (compSeq.trim().length ==0 || compSeq.trim().length < 5) {
 			alert('empty or too short seq-no, most of all is 7-10 digits NOT char.');
 			return;
