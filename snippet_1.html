@@ -46,6 +46,12 @@ hr.dash {background-color: #fff;border-top: 2px dashed #8c8b8b;}
 	var my_url = 'https://www.korcham.net/nCham/Service/Event/appl/CompanySearch_1.asp';
 	var func1 = function(){
 		var callee = window.open(my_url, "callee", "width=200,height=100");
+		var searchTxt = callee.document.getElementById('searchText');
+		searchTxt.value = "흥진환경";
+		console.log('//-- '+searchTxt.value);
+		var form = callee.document.consultForm;
+		form.action = 'https://www.korcham.net/nCham/Service/Event/appl/CompanySearch_1.asp';
+		form.submit();
 	};
 </script>
 
