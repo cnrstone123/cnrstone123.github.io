@@ -113,7 +113,7 @@ app00.controller("SelectCtrler", function ($scope, $http) {
 			return;
 		}
 		console.log(url+opers[0]+paramStr);
-		outputElm.innerHTML = '<a href="'+url+opers[0]+paramStr+'"' + ' target="_new1">op1=' + (compName||compRegNo||'') + '</a>';
+		outputElm.innerHTML = '<a href="'+url+opers[0]+paramStr+'"' + ' target="_op1">op1=' + (compName||compRegNo||'') + '</a>';
 	};
 	$scope.oper2 = function(){
 		var compSeq = (document.getElementById('compSeq').value||'');
@@ -122,7 +122,7 @@ app00.controller("SelectCtrler", function ($scope, $http) {
 			return;
 		}
 		var paramStr = 'seq='+compSeq+keyStr;
-		outputElm.innerHTML += ', ' + '<a href="'+url+opers[1]+paramStr+'"' + ' target="_new1">op2=' + (compSeq||'') + '</a>';
+		outputElm.innerHTML += ', ' + '<a href="'+url+opers[1]+paramStr+'"' + ' target="_op2">op2=' + (compSeq||'') + '</a>';
 	};
 	/**
 	 * Failed to load http://apis.data.go.kr/B552015/NpsBplcInfoInqireService/getBassInfoSearch:
