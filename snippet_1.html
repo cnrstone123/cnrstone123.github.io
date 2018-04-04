@@ -17,11 +17,15 @@ hr.dash {background-color: #fff;border-top: 2px dashed #8c8b8b;}
   <div id="bed">
     <div id="dva"></div>
     <div id="dvb"></div>
+	<input type="button" onclick="func1()" value="opener" />
   </div>
 
 <script type="text/javascript">
 var your_url = 'https://www.korcham.net/nCham/Service/Event/appl/CompanySearch_1.asp';
-
+var func1 = function(){
+	var callee = window.open("google.com/ncr", "callee", "width=200,height=100");
+	callee.document.write("aaaaaaaaaaaaa");
+};
 </script>
 
 <script type="text/javascript">
