@@ -8,7 +8,7 @@ var dbFileElm = document.getElementById('dbfile');
 
 // Start the worker in which sql.js will run
 //var worker = new Worker("worker.sql.js");
-var worker = new Worker("worker.sql.js");
+var worker = new Worker("js/worker.sql.js");
 worker.onerror = error;
 
 // Open a database
