@@ -21,10 +21,10 @@ hr.dash {background-color: #fff;border-top: 2px dashed #8c8b8b;}
   </div>
 
 <script type="text/javascript">
-var your_url = 'https://www.korcham.net/nCham/Service/Event/appl/CompanySearch_1.asp';
-var func1 = function(){
-	var callee = window.open("google.com/ncr", "callee", "width=200,height=100");
-};
+	var my_url = 'https://www.korcham.net/nCham/Service/Event/appl/CompanySearch_1.asp';
+	var func1 = function(){
+		var callee = window.open(my_url, "callee", "width=200,height=100");
+	};
 </script>
 
 <script type="text/javascript">
@@ -95,9 +95,9 @@ jQuery.ajax = (function(_ajax){
 })(jQuery.ajax);
 
 
-
+/*
 $.ajax({
-    url: your_url,
+    url: my_url,
     type: 'GET',
     success: function(res) {
         var text = res.responseText;
@@ -105,7 +105,7 @@ $.ajax({
         alert(text);
     }
 });
-
+*/
 </script>
   
   <hr class="dash" />
