@@ -114,6 +114,9 @@ app00.controller("SelectCtrler", function ($scope, $http) {
 		}
 		console.log(url+opers[0]+paramStr);
 		outputElm.innerHTML = '<a href="'+url+opers[0]+paramStr+'"' + ' target="_op1">op1=' + (compName||compRegNo||'') + '</a>';
+		$http.get(url+opers[0]+paramStr).then(function(response){
+			console.log('//-- response...'+response.data);
+		});
 	};
 	$scope.oper2 = function(){
 		var compSeq = (document.getElementById('compSeq').value||'');
