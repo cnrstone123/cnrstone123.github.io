@@ -139,6 +139,11 @@ app00.controller("SelectCtrler", function ($scope, $http) {
 	 * because chrome-startup-command is ???... chrome.exe --allow-file-access-from-files
 	 */
 	$scope.search1 = function(){
+		$.getJSON("https://api.github.com/users/jeresig?callback=?", function(data){
+			console.log(JSON.stringify(data));
+		});
+	};
+	$scope.search = function(){
 		var argName  = $scope.compName,
 			argRegNo = $scope.compRegNo;
 		if(!argName && !argRegNo){
