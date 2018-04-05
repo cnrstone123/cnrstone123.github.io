@@ -20,16 +20,24 @@ document.getElementsByTagName('head')[0].appendChild(script);
   <p>Open up your browser's console.</p>
   <input type="button" value="jsonp" onclick="func1()" />
   <script type="text/javascript">
+    /*
     function resultFunc(json){
       console.log('//-- json ='+json);
     };
+    */
     function func1(){
+      $.getJSON("https://api.github.com/users/jeresig?callback=?", function(json){
+        console.log("json ="+json);
+      });
+      /*
       $.ajax({
         url: "https://api.github.com/users/jeresig",
         dataType: "jsonp",
         jsonpCallback: "resultFunc"
       });
+      */
     }
+    
   </script>
 </body>
 </html>
