@@ -17,5 +17,18 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 <body>
   <p>Open up your browser's console.</p>
+  <input type="button" value="jsonp" onclick="func1()" />
+  <script type="text/javascript">
+    function func1(){
+      function resultFunc(data){
+        console.log('//-- json ='+data);
+      }
+      $.ajax({
+        url: "https://api.github.com/users/jeresig",
+        dataType: "jsonp",
+        jsonpCallback: "resultFunc"
+      });
+    }
+  </script>
 </body>
 </html>
