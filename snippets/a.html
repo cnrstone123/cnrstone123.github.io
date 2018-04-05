@@ -18,7 +18,8 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 <body>
   <p>Open up your browser's console.</p>
-  <input type="button" value="jsonp" onclick="func1()" />
+  <input type="button" id="btn1" value="getting jsonp..." onclick="func1()" />
+  <div id='output'></div>
   <script type="text/javascript">
     /*
     function resultFunc(json){
@@ -27,7 +28,10 @@ document.getElementsByTagName('head')[0].appendChild(script);
     */
     function func1(){
       $.getJSON("https://api.github.com/users/jeresig?callback=?", function(json){
-        console.log("json ="+json);
+        var outputElm = document.getElementById('output');
+        outputElm.innerHTML += "getting json-data, from https://api.github.com/users/jeresig"
+                + JSON.stringify(json);
+        console.log("json ="+JSON.stringify(json));
       });
       /*
       $.ajax({
