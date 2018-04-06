@@ -272,3 +272,13 @@ app00.controller("SelectCtrler", function ($scope, $http) {
 		*/
 	}; // end of searchBtn
 });
+
+var irosSearch = function(){
+	var dlg = window.open('http://www.iros.go.kr/ifrontservlet?cmd=IISUGetCorpFrmCallC&fromjunja=', 'dlg', 'width=450,height=550');
+};
+var cocharSearch = function(){
+	var dlg = window.open('https://www.korcham.net/nCham/Service/Event/appl/CompanySearch_1.asp', 'dlg', 'width=450,height=550');
+};
+var dartSearch = function(){
+	var dlg = window.open('https://dart.fss.or.kr/dsab001/main.do?autoSearch=true', 'dlg', 'width=450,height=550');
+};
