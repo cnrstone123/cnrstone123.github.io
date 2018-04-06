@@ -35,9 +35,9 @@
 				<select id="cdLawUMD" ng-model="cdLawUMD" class="form-control" ng-options="row as row.ming for row in LstLawUMD" class="form-control"></select>
 				<select id="cdGovUMD" ng-model="cdGovUMD" class="form-control" ng-options="row as row.ming for row in LstGovUMD" class="form-control"></select>
 				<br/>
-				<button id="btnSearch1" ng-click="search1()" type="button" class="btn btn-primary btn-block">搜索(op1)</button>
-				<!--
 				<button id="btnSearch1" ng-click="oper1()" type="button" class="btn btn-primary btn-block">搜索(op1)</button>
+				<!--
+				<button id="btnSearch1" ng-click="search1()" type="button" class="btn btn-primary btn-block">搜索(op1)</button>
 				-->
 				<br/>
 				<input id="compSeq" type="text" class="form-control" ng-model="compSeq" placeholder="SEQ-No(3335599...:7-10-digit)" value="" maxlength="10" />
@@ -54,7 +54,13 @@
 			</pre>
 			<pre id="output" class="output panel-body">
 result will be displayed here.
+
+company-search on iros: <a href="#" onclick="javascript:irosSearch(); return false;">ifrontservlet?cmd=IISUGetCorpFrmCallC=</a>
+company-search on cochar: <a href="#" onclick="javascript:cocharSearch(); return false;">nCham/Service/Event/appl/CompanySearch_1.asp</a>
+company-search on dart: <a href="#" onclick="javascript:dartSearch(); return false;">dart.fss</a>
+
 demo-site: <a href="http://kripken.github.io/sql.js/GUI/">http://kripken.github.io/sql.js/GUI/</a>
+
 about AngularJS and scope.$apply, read more...
 <a href="http://jimhoskins.com/2012/12/17/angularjs-and-apply.html">http://jimhoskins.com/2012/12/17/angularjs-and-apply.html</a>
 about Nested Scopes in AngularJS
